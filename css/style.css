@@ -78,7 +78,7 @@ body {
 /*MAIN*/
 
 .cards-content {
-    padding: 30px 60px;
+    padding: 30px 60px 80px;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(220px, 300px));
     grid-template-rows: auto;
