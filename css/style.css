@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: #1d022b;
 }
 
 .section-header {
@@ -71,4 +72,63 @@ body {
 .fab {
     font-size: 20px;
     color: #fff;
+}
+
+
+/*MAIN*/
+
+.cards-content {
+    padding: 30px 60px;
+}
+
+.card-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 22px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-item .information-overflow {
+    display: none;
+    color: #fff;
+    background: rgb(89 11 72 / 86%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.card-item:hover .information-overflow {
+    display: flex;
+}
+
+.card-item .information-container>* {
+    margin-bottom: 8px;
+}
+
+.information-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.information-status {
+    width: 60px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+.information-status.alive {
+    background: #1fbf1f;
+}
+
+.information-status.dead {
+    background: #910202;
 }
