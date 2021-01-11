@@ -1,0 +1,12 @@
+.header-container {
+    padding: 0 24px;
+    text-align: center;
+}
+
+.header-container .header-description {
+    width: 100%;
+}
+
+.header-social-medias {
+    justify-content: center;
+}
