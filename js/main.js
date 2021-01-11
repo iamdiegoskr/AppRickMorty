@@ -16,6 +16,17 @@ const getCharacteres = async(API) => {
     return results;
 }
 
+const stilllives = (status) => {
+    switch (status) {
+        case "Alive":
+            return "alive";
+        case "Dead":
+            return "dead";
+        default:
+            return "unknown"
+    }
+}
+
 const renderCharacteres = async() => {
 
     const characteres = await getCharacteres(BASE_API);
@@ -24,6 +35,8 @@ const renderCharacteres = async() => {
     let html = '';
 
     characteres.forEach((character) => {
+
+        const status = stilllives(character.status);
 
         let cardCharacter =
             `
@@ -35,7 +48,7 @@ const renderCharacteres = async() => {
                     <p class="information-name">${character.name}</p>
                     <p class="information-specie">${character.species}</p>
                     <p class="information-gender">${character.gender}</p>
-                    <p class="information-status alive">${character.status}</p>
+                    <p class="information-status ${status}">${character.status}</p>
                 </div>
             </div>
             </div>

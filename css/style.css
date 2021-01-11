@@ -146,6 +146,10 @@ body {
     background: #910202;
 }
 
+.information-status.unknown {
+    background: #0a3470;
+}
+
 .bagde-dimension {
     background: #cf159b;
     border-radius: 8px;
