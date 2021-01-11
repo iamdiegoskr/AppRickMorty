@@ -135,7 +135,7 @@ body {
     border-radius: 4px;
     padding: 1px;
     text-align: center;
-    width: 60px;
+    width: 80px;
 }
 
 .information-status.alive {
@@ -147,16 +147,15 @@ body {
 }
 
 .bagde-dimension {
-    background: #7b0651;
+    background: #cf159b;
     border-radius: 8px;
     color: #fff;
     font-weight: bold;
     left: 10px;
     letter-spacing: 1px;
-    padding: 4px;
+    padding: 4px 14px;
     position: absolute;
     text-align: center;
-    text-transform: uppercase;
     top: 10px;
-    width: 150px;
+    text-transform: capitalize;
 }
